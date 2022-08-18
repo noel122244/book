@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
         <style>
             #book {
                 width: 500px;
@@ -49,12 +51,12 @@
         <div id="book">
             <section id="pageSection">
                 <div class="page" id="page1">
-                    <h2>첫 번째 페이지...</h2>
+                    <h2>후</h2>
                     <span>This is first page...</span>
                 </div>
             
                 <div class="page" id="page2">
-                    <h2>두 번째 페이지...</h2>
+                    <h2>2번재 페이지</h2>
                     <span>This is second page...</span>
                 </div>
             </section>
