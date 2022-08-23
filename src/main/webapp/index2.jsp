@@ -50,8 +50,8 @@
 						  catch(Exception e){}
 						 }
  					%>
-
 					</div>
+					<div style="background-image:url(123.jpg)"></div>
 				</div>
 			</div>
 		</div>
