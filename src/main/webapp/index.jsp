@@ -28,7 +28,7 @@
 		<script type="text/javascript" src="./pageEffect/index.js"></script>
 		<style>
 			.word {
-				background-image:url(1.jpg);
+				background-image:url(./image/1.jpg);
 				color: white;
 				font-weight: bold;
 			}
@@ -46,7 +46,7 @@
 	    <div class="flipbook-viewport">
 			<div class="container">
 				<div class="flipbook">
-					<div style="background-image:url(222.jpg)"></div>
+					<div style="background-image:url(./image/main.jpg)"></div>
 					
 					<%	   int pageReset = 1;
 						   while(true){
