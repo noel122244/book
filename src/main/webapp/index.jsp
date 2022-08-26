@@ -41,7 +41,7 @@
 							   if(str == null) {
 								   break;
 							   }
-							   if(pageReset == 1){System.out.println("div");
+							   if(pageReset == 1){
 					%>
 								   <div class="word">
 					<%
@@ -49,7 +49,7 @@
 							   out.print(str + "</br>");
 							   if (pageReset == 20){
 								   pageReset = 1;
-								   System.out.println("/div");
+								 
 					%>				
 								   </div>
 					<%		       
