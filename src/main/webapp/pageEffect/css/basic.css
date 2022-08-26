@@ -1,6 +1,7 @@
 /* Basic sample */
 
 body{
+	/* 컨텐츠의 요소가 커서 블럭을 나갈 때 숨김 처리 */
 	overflow:hidden;
 	background-color:#fcfcfc;
 	margin:0;

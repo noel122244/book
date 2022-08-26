@@ -25,20 +25,8 @@
 		<meta charset="UTF-8"/>
 		<script type="text/javascript" src="./pageEffect/extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="./pageEffect/extras/modernizr.2.5.3.min.js"></script>
-		<script type="text/javascript" src="./pageEffect/index.js"></script>
-		<style>
-			.word {
-				background-image:url(./image/1.jpg);
-				color: white;
-				font-weight: bold;
-			}
-			.bold {
-				text-decoration:underline;
-				color: gold;
-			}
-			.subheading {
-			}
-		</style>
+		<script type="text/javascript" src="./index.js"></script>
+		<link href="index.css" rel="stylesheet" type="text/css" />
 	</head>
 
     <body>
@@ -47,21 +35,25 @@
 			<div class="container">
 				<div class="flipbook">
 					<div style="background-image:url(./image/main.jpg)"></div>
-					
 					<%	   int pageReset = 1;
 						   while(true){
 							   String str = reader.readLine();  
-							   if(str==null) {break;}
-							   if (pageReset == 1){
+							   if(str == null) {
+								   break;
+							   }
+							   if(pageReset == 1){System.out.println("div");
 					%>
-					<div class="word">
+								   <div class="word">
 					<%
-							   } 
+							   }
 							   out.print(str + "</br>");
-							   if (pageReset == 20){ pageReset = 1;
+							   if (pageReset == 20){
+								   pageReset = 1;
+								   System.out.println("/div");
 					%>				
-					</div>
-					<%		   }else{
+								   </div>
+					<%		       
+								}else{
 								   pageReset++;
 								}
 						   }
