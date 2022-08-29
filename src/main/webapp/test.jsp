@@ -29,9 +29,11 @@
 		</div>
 
     <script>
-	    $(function(){
-	      $("#first").after(./NewFile.html);
-	    });
+    $(function () {
+        $.get("./page/GOJ1.html", function (data) {
+            $("#flipbook").append(data);
+        });
+    });
     </script>
 	</body>
 </html>

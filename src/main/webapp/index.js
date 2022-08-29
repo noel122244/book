@@ -1,4 +1,8 @@
-
+    $(function () {
+        $.get("./page/GOJ1.html", function (data) {
+            $("#flipbook").append(data);
+        });
+    });
 function loadApp() {
 	// Create the flipbook
 	$('.flipbook').turn({

@@ -8,3 +8,13 @@
 	text-decoration:underline;
 	color: gold;
 }
+
+h2 {
+	text-align: center;
+}
+
+focus{
+	font-size: 24px;
+	color: gold;
+	text-align: center;
+}
