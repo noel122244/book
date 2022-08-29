@@ -35,38 +35,31 @@
 			<div class="container">
 				<div class="flipbook">
 					<div style="background-image:url(./image/main.jpg)"></div>
-					<%	   int pageReset = 1;
+<%	   
+						   int pageReset = 1;
 						   while(true){
 							   String str = reader.readLine();  
 							   if(str == null) {
 								   break;
 							   }
 							   if(pageReset == 1){
-					%>
+%>
 								   <div class="word">
-					<%
+<%
 							   }
 							   out.print(str + "</br>");
 							   if (pageReset == 20){
 								   pageReset = 1;
-								 
-					%>				
+%>				
 								   </div>
-					<%		       
-								}else{
-								   pageReset++;
-								}
+<%		       
+								}else{ pageReset++; }
 						   }
-						  }
-						  catch(FileNotFoundException fnfe){ out.print("파일이 존재 하지 않습니다."); }
-						 catch(IOException ioe){ out.print("파일을 읽을수 없습니다.");}
-
-						 finally {
-						  try 
-						  {	reader.close();	}
-						  catch(Exception e){}
-						 }
- 					%>
+  	 }
+	 catch(FileNotFoundException fnfe){ out.print("파일이 존재 하지 않습니다."); }
+	 catch(IOException ioe){ out.print("파일을 읽을수 없습니다.");}
+	 finally { try {reader.close();} catch(Exception e){} }
+%>
 
 				</div>
 			</div>

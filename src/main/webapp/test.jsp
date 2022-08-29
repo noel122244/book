@@ -1,39 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="org.apache.jasper.tagplugins.jstl.core.Catch"%>
+<%@ page import="java.io.IOException"%>
+<%@ page import="java.io.FileNotFoundException"%>
+<%@ page import="java.io.FileReader"%>
+<%@ page import="java.io.BufferedReader"%>
+<%@ page import="java.io.InputStreamReader"%>
+<%@ page import="java.io.FileInputStream"%>
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-  </head>
-  <body>
-    <div class="main">
-      <div class="tabs">
-        <div class="tab" data-tab-target="#tab1">
-          <p>tab1</p>
-        </div>
-        <div class="tab" data-tab-target="#tab2">
-          <p>tab2</p>
-        </div>
-        <div class="tab" data-tab-target="#tab3">
-          <p>tab3</p>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div id="tab1" data-tab-content class="items active">
-        <h2>Tab1</h2>
-        <p>11한글isj</p>
-      </div>
-      <div id="tab2" data-tab-content class="items">
-        <h2>Tab2</h2>
-        <p></p>
-      </div>
-      <div id="tab3" data-tab-content class="items">
-        <h2>Tab3</h2>
-        <p></p>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+	<head>
+		<meta name="viewport" content="width = 1050, user-scalable = no" />
+		<meta charset="UTF-8"/>
+		<script type="text/javascript" src="./pageEffect/extras/jquery.min.1.7.js"></script>
+		<script type="text/javascript" src="./pageEffect/extras/modernizr.2.5.3.min.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+		<link href="index.css" rel="stylesheet" type="text/css" />
+	</head>
+
+    <body>
+
+	    <div class="flipbook-viewport">
+			<div class="container" id="container">
+				<div class="flipbook" id="flipbook">
+					<div id="first" style="background-image:url(./image/main.jpg)"></div>
+				</div>
+			</div>
+		</div>
+
+    <script>
+	    $(function(){
+	      $("#first").after(./NewFile.html);
+	    });
+    </script>
+	</body>
 </html>

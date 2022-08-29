@@ -1,3 +1,4 @@
+
 function loadApp() {
 	// Create the flipbook
 	$('.flipbook').turn({
@@ -10,7 +11,7 @@ function loadApp() {
 			// Enable gradients
 			gradients: true,
 			// Auto center this flipbook
-			autoCenter: false
+			autoCenter: true
 	});
 }
 // Load the HTML4 version if there's not CSS transform
