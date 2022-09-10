@@ -1,8 +1,21 @@
-    $(function () {
-        $.get("./page/GOJ1.html", function (data) {
-            $("#flipbook").append(data);
-        });
+
+$(function () {
+	let name = '';
+	for(let i = 1; i <= 13; i++){
+		name = 'GOJ';
+		name = name + i;
+		$.get('./page/' + name + '.html', function (data) {
+        $("#flipbook").append(data);
+        console.log(name);
     });
+	}
+    /*
+    $.get("./page/GOJ2.html", function (data) {
+        $("#flipbook").append(data);
+    });
+    */
+});
+
 function loadApp() {
 	// Create the flipbook
 	$('.flipbook').turn({

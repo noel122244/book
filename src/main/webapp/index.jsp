@@ -5,7 +5,7 @@
 		<meta charset="UTF-8"/>
 		<script type="text/javascript" src="./pageEffect/extras/jquery.min.1.7.js"></script>
 		<script type="text/javascript" src="./pageEffect/extras/modernizr.2.5.3.min.js"></script>
-		<script type="text/javascript" src="./index.js"></script>
+		<script type="text/javascript" src="./index1.js"></script>
 		<link href="index.css" rel="stylesheet" type="text/css" />
 	</head>
 
