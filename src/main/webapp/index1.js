@@ -1,19 +1,13 @@
 
 $(function () {
 	let name = '';
-	for(let i = 1; i <= 13; i++){
+	for(let i = 1; i <= 3; i++){
 		name = 'GOJ';
 		name = name + i;
 		$.get('./page/' + name + '.html', function (data) {
-        $("#flipbook").append(data);
-        console.log(name);
-    });
+        	$("#flipbook").append(data);
+    	});
 	}
-    /*
-    $.get("./page/GOJ2.html", function (data) {
-        $("#flipbook").append(data);
-    });
-    */
 });
 
 function loadApp() {
